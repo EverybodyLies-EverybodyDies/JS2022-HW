@@ -7,14 +7,51 @@
     <title>JS2022</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let a = prompt("Enter Number a");
         let b = prompt("Enter Number b");
         let x = - b / a
 
-        if (a !== 0){
+        if (a != 0){
+           alert(x);
+           
+       }
+       else if (a == 0){
+            alert("Невозмоная операция");
+       }
+       
+        
+    </script> -->
+
+    <script>
+        let a = prompt("Enter Number a");
+        let b = prompt("Enter Number b");
+        let c = prompt("Enter Number c");
+        let D = (b*b) - (4*a*c);
+        let x = -b/(2 * a);
+        let x1 = -b+Math.sqrt(D)/(2 * a);
+        let x2 = -b-Math.sqrt(D)/(2 * a);
+
+        if (a == 0) {
+            alert("Это не квадратичная функция");
+        }
+
+        if (D < 0) { 
+            alert("Нет корней");
+        }
+
+        if (D == 0) {
             alert(x);
         }
+
+        if (D > 0) {
+            alert(x1);
+        }
+
+        if (D > 0) {
+            alert(x2);
+        }
+
 
     </script>
 </body>
